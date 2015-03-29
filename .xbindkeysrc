@@ -1,0 +1,4 @@
+"/usr/bin/amixer -q sset Master 2+"
+    Alt + Up
+"/usr/bin/amixer -q sset Master 2-"
+    Alt + Down
