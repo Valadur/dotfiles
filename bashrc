@@ -1,26 +1,18 @@
 alias ls='ls --group-directories-first'
 alias cp='cp -aiv'
 alias grep='grep --color=always'
-alias tgz='tar -pczf'
 alias ll='ls -la'
+alias proj='cd ~/Development/Projekt/ponysimweltraum'
+alias uA='yaourt -Syu --aur'
+alias es='espeak -vde '
+alias esp='espeak -vde --punct '
 
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[1m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[1m\]$\[\033[00m\] '
+export PS1="\[\e[01;34m\]\u\[\e[0m\]\[\e[00;37m\]@[\[\e[0m\]\[\e[00;32m\]\w\[\e[0m\]\[\e[00;37m\]] \t\n\\$ \[\e[0m\]"
 
-export OOO_FORCE_DESKTOP=gnome
+export EDITOR="vim"
+export GOPATH=~/go
+export GOROOT=~/go
+export PATH=$PATH:$GOPATH/bin
 
-function psgrep () {
-  ps aux | grep "$1" | grep -v "grep"
-}
-
-function mkcd () {
-  mkdir -p "$1"
-  cd "$1"
-}
-
-# set an ad-hoc GUI timer
-timer() {
-	  local N=$1; shift
-
-	    (sleep $N && zenity --info --title="Time's Up" --text="${*:-BING}") &
-		  echo "timer set for $N"
-	  }
+#export OOO_FORCE_DESKTOP=gnome
+export ANDROID_HOME=/opt/android-sdk

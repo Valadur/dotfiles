@@ -50,7 +50,7 @@ Uptime $alignr $uptime
 
 # CPU
 ${template0 CPU}
-$color${font}Intel i5 3570k $alignr $cpu %
+$color${font}Intel i7 $alignr $cpu %
 ${cpugraph}
 # RAM
 ${template0 RAM}
