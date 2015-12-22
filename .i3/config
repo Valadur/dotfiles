@@ -201,6 +201,10 @@ exec --no-startup-id feh --bg-scale ~/Bilder/Background/arch.jpg
 # Custom Keybinds
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Bilder/screenshots/'
 
+# Disable focus following for the mouse
+focus_follows_mouse no
+
+
 # # Touchpad controls
 
 #######################################################################
