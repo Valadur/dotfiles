@@ -197,6 +197,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 exec --no-startup-id feh --bg-scale ~/Bilder/Background/arch.jpg
 #exec --no-startup-id ~/Dokumente/scripts/TapToClick.sh
 #exec --no-startup-id fancontrol
+#exec --no-startup-id nm-applet
+
 
 # Custom Keybinds
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Bilder/screenshots/'
